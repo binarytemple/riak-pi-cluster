@@ -9,21 +9,27 @@ export MAC_ADDRESS=`cat /sys/class/net/eth0/address`
 case "$MAC_ADDRESS" in
   "b8:27:eb:fc:c5:10")
     export NEW_HOSTNAME="utility.pi"
+    export NEW_IP="10.0.1.111"
     ;;
   "b8:27:eb:a6:0d:2f")
     export NEW_HOSTNAME="riak1.pi"
+    export NEW_IP="10.0.1.112"
     ;;
   "b8:27:eb:db:53:2e")
     export NEW_HOSTNAME="riak2.pi"
+    export NEW_IP="10.0.1.113"
     ;;
   "b8:27:eb:9e:ea:52")
     export NEW_HOSTNAME="riak3.pi"
+    export NEW_IP="10.0.1.114"
     ;;
   "b8:27:eb:d3:24:30")
     export NEW_HOSTNAME="riak4.pi"
+    export NEW_IP="10.0.1.115"
     ;;
   "b8:27:eb:e4:bf:27")
     export NEW_HOSTNAME="riak5.pi"
+    export NEW_IP="10.0.1.116"
     ;;
   *)
     ;;
@@ -44,14 +50,30 @@ gpu_mem=16" | sudo tee -a /boot/config.txt
 echo $NEW_HOSTNAME | sudo tee /etc/hostname
 sudo sed -i "s/127.0.1.1.*$CURRENT_HOSTNAME/127.0.1.1\t$NEW_HOSTNAME/g" /etc/hosts
 
+# /etc/network/interfaces
+echo -e "\
+auto lo
+iface lo inet loopback
+
+auto eth0
+allow-hotplug eth0
+iface eth0 inet dhcp
+
+auto eth0:1
+iface eth0:1 inet static
+address $NEW_IP
+netmask 255.255.255.0
+broadcast 10.0.1.255
+" | sudo tee -a /etc/network/interfaces
+
 # add other node IPs
 echo -e "\
-192.168.0.110\tutility utility.pi
-192.168.0.111\triak1 riak1.pi
-192.168.0.112\triak2 riak2.pi
-192.168.0.113\triak3 riak3.pi
-192.168.0.114\triak4 riak4.pi
-192.168.0.115\triak5 riak5.pi\
+10.0.1.110\tutility utility.pi
+10.0.1.111\triak1 riak1.pi
+10.0.1.112\triak2 riak2.pi
+10.0.1.113\triak3 riak3.pi
+10.0.1.114\triak4 riak4.pi
+10.0.1.115\triak5 riak5.pi\
 " | sudo tee -a /etc/hosts
 
 # install newer versions of gcc and g++

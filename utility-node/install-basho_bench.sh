@@ -1,3 +1,3 @@
 #!/bin/sh
 
-# install and configure basho bench
+# TODO: install and configure basho bench

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-RIAK_ETH="eth0"
+RIAK_ETH="eth0:1"
 RIAK_IP=`ifconfig $RIAK_ETH | grep 'inet addr:' | cut -d: -f2 | cut -d " " -f1`
 HOSTNAME=`hostname --fqdn`
 

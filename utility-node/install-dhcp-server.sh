@@ -1,3 +1,3 @@
 #!/bin/sh
 
-# install and configure dhcp server
+# TODO: install and configure dhcp server
