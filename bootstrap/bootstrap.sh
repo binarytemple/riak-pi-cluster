@@ -82,6 +82,10 @@ sudo apt-get update --fix-missing
 sudo apt-get install gcc=4:4.9.2-2 g++=4:4.9.2-2 --yes
 sudo sed -i 's/jessie/wheezy/g' /etc/apt/sources.list
 
+# disable ssh strict host key checking (requires n*n confirmations)
+
+sudo sed -i '/StrictHostKeyChecking/c\StrictHostKeyChecking no' /etc/ssh/ssh_config
+
 # install some commonly used packages
 sudo apt-get update --fix-missing
 sudo apt-get install vim git --yes
