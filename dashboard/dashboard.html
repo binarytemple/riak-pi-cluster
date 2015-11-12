@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dadsa</title>
+</head>
+<body>
+
+
+
+<div id="viz"></div>
+
+
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
+<script>
+
+var hosts = [];
+
+var url = "http://localhost:8666/haproxy-csv";
+
+
+
+function update() {
+    d3.csv(url, function(data) {
+    hosts = data.filter(
+            function(d){
+                return d["# pxname"] == "riak_backend_http"
+                        && d["svname"] != "BACKEND";
+            }
+    ).map(function(d){
+        return {"label": d["svname"],"value": d["status"]};
+    });
+
+   d3.select("#viz")
+                .append("table")
+                .style("border-collapse", "collapse")
+                .style("border", "2px black solid")
+            .selectAll("tr")
+            .data(hosts)
+            .enter().append("tr")
+            .data(hosts)
+            .selectAll("td")
+            .data(function(d){
+                return [
+                    d["label"], d["value"]
+                ];
+            })
+            .enter().append("td")
+            .style("border", "1px black solid")
+            .style("padding", "5px")
+            .on("mouseover", function(){d3.select(this).style("background-color", "aliceblue")})
+            .on("mouseout", function(){d3.select(this).style("background-color", "white")})
+            .text(function(d){return d;})
+            .style("font-size", "12px");
+});
+}
+
+
+update();
+setInterval(update, 1000);
+
+</script>
+
+<button onclick="alert(JSON.stringify(hosts[0]))"> see value </button>
+<div id="svg"></div>
+
+
+</body>
+</html>
