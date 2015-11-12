@@ -1,4 +1,9 @@
+cat hosts
+[all:children]
 utility
+riak
+
+[utility]
 
 [webservers]
 utility  ansible_connection=local
@@ -13,8 +18,8 @@ utility  ansible_connection=local
 utility  ansible_connection=local
 
 [riak]
-riak1 ansible_connection=ssh ansible_user=basho
-riak2 ansible_connection=ssh ansible_user=basho
-riak3 ansible_connection=ssh ansible_user=basho
-riak4 ansible_connection=ssh ansible_user=basho
-riak5 ansible_connection=ssh ansible_user=basho
+riak1.local ansible_connection=ssh ansible_user=basho
+riak2.local  ansible_connection=ssh ansible_user=basho
+riak3.local  ansible_connection=ssh ansible_user=basho
+riak4.local  ansible_connection=ssh ansible_user=basho
+riak5.local  ansible_connection=ssh ansible_user=basho
