@@ -1,0 +1,20 @@
+utility
+
+[webservers]
+utility  ansible_connection=local
+
+[lb]
+utility  ansible_connection=local
+
+[graphite]
+utility  ansible_connection=local
+
+[grafana]
+utility  ansible_connection=local
+
+[riak]
+riak1 ansible_connection=ssh ansible_user=basho
+riak2 ansible_connection=ssh ansible_user=basho
+riak3 ansible_connection=ssh ansible_user=basho
+riak4 ansible_connection=ssh ansible_user=basho
+riak5 ansible_connection=ssh ansible_user=basho
