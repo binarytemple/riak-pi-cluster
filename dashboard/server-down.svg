@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="225.802" height="349.614" viewBox="0, 0, 225.802, 349.614">
+  <defs>
+    <filter id="Shadow_1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="159.43" y1="60.15" x2="159.43" y2="343.614">
+      <stop offset="0" stop-color="#95FFA7"/>
+      <stop offset="1" stop-color="#548259"/>
+    </linearGradient>
+    <filter id="Shadow_2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <radialGradient id="Gradient_2" gradientUnits="userSpaceOnUse" cx="112.901" cy="174.807" r="107.401">
+      <stop offset="0" stop-color="#FF8626"/>
+      <stop offset="1" stop-color="#E12E00"/>
+    </radialGradient>
+  </defs>
+  <g id="Layer_1">
+    <g id="down">
+      <g id="rect2404">
+        <path d="M221.301,59.284 L221.301,273.037 L221.051,273.181 L98.308,344.047 L97.558,344.48 L97.558,130.727 L97.808,130.583 L220.551,59.716 L221.301,59.284 z" filter="url(#Shadow_1)" fill="rgba(0,0,0,0.65)"/>
+        <path d="M98.058,131.016 L220.802,60.15 L220.802,272.748 L98.058,343.614 z" fill="url(#Gradient_1)"/>
+        <path d="M98.058,131.016 L220.802,60.15 L220.802,272.748 L98.058,343.614 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <g id="path3193">
+        <path d="M128.244,6.5 L220.301,59.65 L220.301,272.248 L97.558,343.114 C66.872,343.114 20.843,316.539 5.5,289.965 L5.5,77.366 L128.244,6.5 z" filter="url(#Shadow_2)" fill="rgba(0,0,0,0.65)"/>
+        <path d="M128.244,6.5 L5.5,77.366 L5.5,289.965 C20.843,316.539 66.872,343.114 97.558,343.114 L220.302,272.248 L220.302,59.65 L128.244,6.5 z" fill="url(#Gradient_2)"/>
+      </g>
+      <path d="M6,77.866 L6,290.465 C21.343,317.039 67.372,343.614 98.058,343.614 L98.058,131.016 C67.372,131.016 21.343,104.441 6,77.866 z" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3178"/>
+      <path d="M85.921,165.255 C58.457,159.348 31.694,144.371 13.102,123.213" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3207"/>
+      <path d="M26.415,222.108 C31.482,222.108 35.59,226.91 35.59,232.835 C35.59,238.76 31.482,243.562 26.415,243.562 C21.348,243.562 17.24,238.76 17.24,232.835 C17.24,226.91 21.348,222.108 26.415,222.108 z" fill-opacity="0" stroke="#000000" stroke-width="5.948" stroke-linecap="round" stroke-linejoin="round" id="path3215"/>
+      <path d="M26.154,255.334 C31.055,255.334 35.027,259.979 35.027,265.708 C35.027,271.438 31.055,276.083 26.154,276.083 C21.254,276.083 17.281,271.438 17.281,265.708 C17.281,259.979 21.254,255.334 26.154,255.334 z" fill-opacity="0" stroke="#000000" stroke-width="5.753" stroke-linecap="round" stroke-linejoin="round" id="path3217"/>
+      <path d="M87.226,190.552 C59.762,184.645 32.999,169.667 14.407,148.51" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3275"/>
+      <path d="M98.058,131.016 C67.372,131.016 21.343,104.441 6,77.866 L128.744,7 L220.802,60.15 L98.058,131.016 z" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3176"/>
+      <text transform="matrix(1, 0, 0, 1, 170.521, 201.382)" id="number">
+        <tspan x="-20.021" y="26" font-family="Helvetica" font-size="72" fill="#000000">1</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

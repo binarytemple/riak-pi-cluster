@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="224.802" height="346.614" viewBox="0, 0, 224.802, 346.614">
+  <defs>
+    <filter id="Shadow_1">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="158.43" y1="58.15" x2="158.43" y2="341.614">
+      <stop offset="0" stop-color="#95FFA7"/>
+      <stop offset="1" stop-color="#548259"/>
+    </linearGradient>
+    <filter id="Shadow_2">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000"/>
+      <feComposite in2="offsetblur" operator="in"/>
+    </filter>
+    <linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="112.401" y1="5" x2="112.401" y2="341.614">
+      <stop offset="0" stop-color="#95FFA7"/>
+      <stop offset="1" stop-color="#548259"/>
+    </linearGradient>
+  </defs>
+  <g id="Calque_1">
+    <g id="up">
+      <g id="rect2404">
+        <path d="M220.301,57.284 L220.301,271.037 L220.051,271.181 L97.308,342.047 L96.558,342.48 L96.558,128.727 L96.808,128.583 L219.551,57.716 L220.301,57.284 z" filter="url(#Shadow_1)" fill="rgba(0,0,0,0.65)"/>
+        <path d="M97.058,129.016 L219.802,58.15 L219.802,270.748 L97.058,341.614 z" fill="url(#Gradient_1)"/>
+        <path d="M97.058,129.016 L219.802,58.15 L219.802,270.748 L97.058,341.614 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <g id="path3193">
+        <path d="M127.744,4.423 L127.994,4.567 L220.051,57.716 L220.301,57.861 L220.301,271.037 L220.051,271.181 L97.308,342.047 L97.192,342.114 L97.058,342.114 C66.193,342.114 19.999,315.444 4.567,288.715 L4.5,288.599 L4.5,75.577 L4.75,75.433 L127.494,4.567 L127.744,4.423 z" filter="url(#Shadow_2)" fill="rgba(0,0,0,0.65)"/>
+        <path d="M127.744,5 L5,75.866 L5,288.465 C20.343,315.039 66.372,341.614 97.058,341.614 L219.802,270.748 L219.802,58.15 L127.744,5 z" fill="url(#Gradient_2)"/>
+        <path d="M127.744,5 L5,75.866 L5,288.465 C20.343,315.039 66.372,341.614 97.058,341.614 L219.802,270.748 L219.802,58.15 L127.744,5 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+      </g>
+      <path d="M5,75.866 L5,288.465 C20.343,315.039 66.372,341.614 97.058,341.614 L97.058,129.016 C66.372,129.016 20.343,102.441 5,75.866 z" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3178"/>
+      <path d="M84.921,163.255 C57.457,157.348 30.694,142.371 12.102,121.213" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3207"/>
+      <path d="M25.415,220.108 C30.482,220.108 34.59,224.91 34.59,230.835 C34.59,236.76 30.482,241.562 25.415,241.562 C20.348,241.562 16.24,236.76 16.24,230.835 C16.24,224.91 20.348,220.108 25.415,220.108 z" fill-opacity="0" stroke="#000000" stroke-width="5.948" stroke-linecap="round" stroke-linejoin="round" id="path3215"/>
+      <path d="M25.154,253.334 C30.055,253.334 34.027,257.979 34.027,263.708 C34.027,269.438 30.055,274.083 25.154,274.083 C20.254,274.083 16.281,269.438 16.281,263.708 C16.281,257.979 20.254,253.334 25.154,253.334 z" fill-opacity="0" stroke="#000000" stroke-width="5.753" stroke-linecap="round" stroke-linejoin="round" id="path3217"/>
+      <path d="M86.226,188.552 C58.762,182.645 31.999,167.667 13.407,146.51" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3275"/>
+      <path d="M97.058,129.016 C66.372,129.016 20.343,102.441 5,75.866 L127.744,5 L219.802,58.15 L97.058,129.016 z" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3176"/>
+      <text transform="matrix(1, 0, 0, 1, 170.021, 199.882)" id="number">
+        <tspan x="-20.021" y="26" font-family="Helvetica" font-size="72" fill="#000000">1</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="225.802" height="370" viewBox="0, 0, 225.802, 370">
+  <defs>
+    <g id="General">
+      <filter id="Shadow_1">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+        <feOffset dx="0" dy="2" result="offsetblur"/>
+        <feFlood flood-color="#000000"/>
+        <feComposite in2="offsetblur" operator="in"/>
+      </filter>
+      <radialGradient id="Gradient_1" gradientUnits="userSpaceOnUse" cx="113.127" cy="197.135" r="107.401">
+        <stop offset="0" stop-color="#FF8626"/>
+        <stop offset="1" stop-color="#E12E00"/>
+      </radialGradient>
+      <filter id="Shadow_2">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="2.5"/>
+        <feOffset dx="0" dy="2" result="offsetblur"/>
+        <feFlood flood-color="#000000"/>
+        <feComposite in2="offsetblur" operator="in"/>
+      </filter>
+      <linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="159.355" y1="82.364" x2="159.355" y2="365.828">
+        <stop offset="0" stop-color="#95FFA7"/>
+        <stop offset="1" stop-color="#548259"/>
+      </linearGradient>
+      <g>
+        <path d="M-0.226,-0 L226.028,-0 L226.028,47.943 L-0.226,47.943 L-0.226,-0 z" fill="#FFFFFF"/>
+        <g id="red-overlay">
+          <path d="M128.47,28.828 L220.528,81.978 L220.528,294.576 L97.784,365.442 C67.098,365.443 21.069,338.868 5.726,312.293 L5.726,99.694 L128.47,28.828 z" filter="url(#Shadow_1)" fill="rgba(0,0,0,0.65)"/>
+          <path d="M128.47,28.828 L220.528,81.978 L220.528,294.576 L97.784,365.442 C67.098,365.443 21.069,338.868 5.726,312.293 L5.726,99.694 L128.47,28.828 z" fill="url(#Gradient_1)"/>
+        </g>
+        <g id="green-overlay">
+          <path d="M128.669,28.637 L128.919,28.781 L220.976,81.931 L221.08,82.01 L221.226,82.157 L221.226,82.364 L221.226,294.962 L221.226,295.251 L220.976,295.395 L98.233,366.261 L98.117,366.328 L97.983,366.328 C67.118,366.328 20.924,339.658 5.492,312.929 L5.425,312.812 L5.425,99.791 L5.675,99.647 L128.419,28.781 L128.669,28.637 z" filter="url(#Shadow_2)" fill="rgba(0,0,0,0.65)"/>
+          <path d="M220.726,82.364 L220.726,294.962 L97.983,365.828 C67.297,365.828 21.268,339.254 5.925,312.679 L5.925,100.08 L128.669,29.214 L220.726,82.364 L220.726,82.364 z" fill="url(#Gradient_2)"/>
+          <path d="M220.726,82.364 L220.726,294.962 L97.983,365.828 C67.297,365.828 21.268,339.254 5.925,312.679 L5.925,100.08 L128.669,29.214 L220.726,82.364 L220.726,82.364 z" fill-opacity="0" stroke="#000000" stroke-width="1"/>
+        </g>
+        <text transform="matrix(1, 0, 0, 1, 113.127, 23.972)" id="node-name">
+          <tspan x="-107.401" y="5.414" font-family="Helvetica-Bold" font-size="24" fill="#000000">riak1</tspan>
+        </text>
+        <path d="M6.226,100.194 L6.226,312.793 C21.569,339.368 67.598,365.943 98.284,365.943 L98.284,153.344 C67.598,153.344 21.569,126.769 6.226,100.194 z" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3178"/>
+        <path d="M86.148,187.583 C58.683,181.676 31.92,166.699 13.329,145.541" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3207"/>
+        <path d="M26.641,244.436 C31.708,244.436 35.816,249.239 35.816,255.163 C35.816,261.088 31.708,265.891 26.641,265.891 C21.574,265.891 17.466,261.088 17.466,255.163 C17.466,249.239 21.574,244.436 26.641,244.436 z" fill-opacity="0" stroke="#000000" stroke-width="5.948" stroke-linecap="round" stroke-linejoin="round" id="path3215"/>
+        <path d="M26.381,277.662 C31.281,277.662 35.254,282.307 35.254,288.037 C35.254,293.766 31.281,298.411 26.381,298.411 C21.48,298.411 17.508,293.766 17.508,288.037 C17.508,282.307 21.48,277.662 26.381,277.662 z" fill-opacity="0" stroke="#000000" stroke-width="5.753" stroke-linecap="round" stroke-linejoin="round" id="path3217"/>
+        <path d="M87.452,212.88 C59.988,206.973 33.225,191.996 14.633,170.838" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3275"/>
+        <path d="M98.284,153.344 C67.598,153.344 21.569,126.769 6.226,100.194 L128.97,29.328 L221.028,82.478 L98.284,153.344 z" fill-opacity="0" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" id="path3176"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
