@@ -47,16 +47,11 @@
                         .select("svg")
                         //-create the svg element
                         .each(function (d) {
-                            console.log(d);
-                            console.log(this);
-
-                            var root = d3.select(this)
+                            var root = d3.select(this);
                             if (d.value == "UP") {
-                                console.log("value was UP:'" + d.value + "'");
                                 root.select("g#green-overlay").attr("style", "display:inline;");
                                 root.select("g#red-overlay").attr("style", "display:none;");
                             } else {
-                                console.log("value was:" + d.value);
                                 root.select("g#green-overlay").attr("style", "display:none;");
                                 root.select("g#red-overlay").attr("style", "display:inline;");
                             }
